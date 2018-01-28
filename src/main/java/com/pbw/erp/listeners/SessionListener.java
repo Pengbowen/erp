@@ -1,11 +1,13 @@
 package com.pbw.erp.listeners;
 
+import javax.servlet.annotation.WebListener;
 import javax.servlet.http.HttpSessionEvent;
 import javax.servlet.http.HttpSessionListener;
-
-public class SessionListener implements HttpSessionListener {
+@WebListener
+public class SessionListener implements HttpSessionListener  {
     @Override
     public void sessionCreated(HttpSessionEvent httpSessionEvent) {
+
         System.out.println("session 被创建啊");
     }
 

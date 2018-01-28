@@ -30,9 +30,9 @@ public class ErpApplication {
 	@Bean
 	public ServletRegistrationBean dispatcherRegistration(DispatcherServlet dispatcherServlet) {
 		ServletRegistrationBean registration = new ServletRegistrationBean(dispatcherServlet);
-		registration.getUrlMappings().clear();
-		registration.addUrlMappings("*.do");
-		registration.addUrlMappings("*.json");
+		//registration.getUrlMappings().clear();
+//		registration.addUrlMappings("*.do");
+//		registration.addUrlMappings("*.json");
 		return registration;
 	}
 }
